@@ -1,0 +1,53 @@
+@inherits LayoutComponentBase
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.Graph
+@inject Microsoft.Graph.GraphServiceClient GraphServiceClient
+
+<RadzenDialog />
+<RadzenNotification />
+<RadzenContextMenu />
+<RadzenTooltip />
+
+<div class="page">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+
+    <main>
+        <div class="top-row px-4 auth">
+            <a class="navbar-brand" href="profile">
+                <img src="@photo" style="width:40px;" class="rounded-pill">
+            </a>
+            <LoginDisplay />
+            <a href="ayuda">Ayuda</a>
+        </div>
+
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
+@code{
+    User? user;
+    string? photo = "images/profile.png";
+    //protected override async Task OnInitializedAsync()
+    //{
+    //    Stream foto;
+    //    try
+    //    {            
+    //        foto = await GraphServiceClient.Me.Photo.Content.Request().GetAsync();
+    //        if (foto != null)
+    //        {
+    //            MemoryStream ms = new MemoryStream();
+    //            foto.CopyTo(ms);
+    //            byte[] byteArray = ms.ToArray();
+    //            var b64String = Convert.ToBase64String(byteArray);
+    //            photo = "data:image/png;base64," + b64String;
+    //        }
+    //    }
+    //    catch (Exception ex)
+    //    {
+    //        Console.WriteLine(ex.Message);
+    //    }
+    //}
+}

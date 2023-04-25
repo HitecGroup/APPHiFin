@@ -1,0 +1,85 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = true
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = APPHiFin.Client
+build_property.RootNamespace = APPHiFin.Client
+build_property.ProjectDir = C:\DEV-HITEC\APPHiFin\APPHiFin\Client\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\DEV-HITEC\APPHiFin\APPHiFin\Client
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/DEV-HITEC/APPHiFin/APPHiFin/Client/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DEV-HITEC/APPHiFin/APPHiFin/Client/Pages/Authentication.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aGVudGljYXRpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DEV-HITEC/APPHiFin/APPHiFin/Client/Pages/Ayuda.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXl1ZGEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DEV-HITEC/APPHiFin/APPHiFin/Client/Pages/Calculadora.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FsY3VsYWRvcmEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DEV-HITEC/APPHiFin/APPHiFin/Client/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DEV-HITEC/APPHiFin/APPHiFin/Client/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DEV-HITEC/APPHiFin/APPHiFin/Client/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DEV-HITEC/APPHiFin/APPHiFin/Client/Pages/MarcaDelete.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFyY2FEZWxldGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DEV-HITEC/APPHiFin/APPHiFin/Client/Pages/MarcaDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFyY2FEZXRhaWxzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DEV-HITEC/APPHiFin/APPHiFin/Client/Pages/MarcaList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFyY2FMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DEV-HITEC/APPHiFin/APPHiFin/Client/Pages/UserProfile.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclByb2ZpbGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DEV-HITEC/APPHiFin/APPHiFin/Client/Shared/LoginDisplay.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luRGlzcGxheS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DEV-HITEC/APPHiFin/APPHiFin/Client/Shared/RedirectToLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFJlZGlyZWN0VG9Mb2dpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DEV-HITEC/APPHiFin/APPHiFin/Client/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DEV-HITEC/APPHiFin/APPHiFin/Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DEV-HITEC/APPHiFin/APPHiFin/Client/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-a1mr49tfxj
+
+[C:/DEV-HITEC/APPHiFin/APPHiFin/Client/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-kihgi0pffw

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "EGQL7C/vxXg8+jW8s1c+1z2hvWqrLFZvt5KG+oj5NvIO4+uiDbUfVxvDmzuWmYc0lfNt9hD5yX7X8Hs7uC/R+A==",
+  "success": true,
+  "projectFilePath": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin.Repositories\\APPHiFin.Repositories.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jbrito\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>AppHiFin</title>
+    <base href="/" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="_content/Radzen.Blazor/css/default-base.css">
+    <link href="AppHiFin.Client.styles.css" rel="stylesheet" />
+    <link href="manifest.json" rel="manifest" />
+    <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png" />
+</head>
+
+<body>
+    <div id="app">
+        <div id="content">
+            <div class="container d-flex align-items-center justify-content-center" style="height: 100vh;">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="loadingio-spinner-gears-nnx8lzbon1i">
+                            <div class="ldio-oekhec1m5n">
+                                <div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+                                <div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="blazor-error-ui">
+        Se ha producido un error no controlado. v1.2.1
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+    <script src="_content/Microsoft.Authentication.WebAssembly.Msal/AuthenticationService.js"></script>
+    <script src="_framework/blazor.webassembly.js"></script>
+    <script src="_content/Radzen.Blazor/Radzen.Blazor.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+    <script>
+        navigator.serviceWorker.register('/service-worker.js', { updateViaCache: 'all' });
+    </script>
+</body>
+
+</html>

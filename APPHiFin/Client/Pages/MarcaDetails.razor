@@ -1,0 +1,80 @@
+﻿@page "/marcadetails"
+@page "/marcadetails/{id:int}"
+
+@using Services
+@using APPHiFin.Shared
+
+@inject IMarcaService MarcaService
+@inject NavigationManager NavigationManager
+
+@if (marca == null)
+{
+    <p><em>Cargando...</em></p>
+} 
+    else 
+{
+  <EditForm Model="marca" OnValidSubmit="Save">
+        <div class="card">
+            <h5 class="card-header">Detalle de Marca</h5>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="">Id Marca</label>
+                        <InputNumber class="form-control" @bind-Value="@marca.idMarca"></InputNumber>                        
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="">Id Pais</label>
+                        <InputNumber class="form-control" @bind-Value="@marca.idPais"></InputNumber>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="">Nombre</label>
+                        <InputText class="form-control" @bind-Value="@marca.Nombre"></InputText>                        
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="">Puerto</label>
+                        <InputText class="form-control" @bind-Value="@marca.Puerto"></InputText>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <input type="submit" class="btn btn-success m-1" value="Guardar">
+                        <input type="button" class="btn btn-secondary m-1" value="Cancelar" @onclick="NavigateHome">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+  </EditForm>
+}
+
+@code {
+
+    public Marca marca;   
+
+    [Parameter]
+    public int id { get; set; }
+
+    protected async override Task OnInitializedAsync()
+    {
+        if (id == 0)
+            marca = new Marca();
+        else
+            marca = await MarcaService.GetMarcaById(id);        
+    }
+
+    protected async Task Save()
+    {
+        await MarcaService.SaveMarca(marca);
+        NavigateHome();
+    }
+
+    private void NavigateHome()
+    {
+        NavigationManager.NavigateTo("/marcalist");
+    }
+}

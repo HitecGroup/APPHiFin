@@ -1,0 +1,68 @@
+﻿@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@using APPHiFin.Shared
+@using Services
+
+@page "/marcalist"
+@attribute [Authorize]
+@inject IMarcaService MarcaService
+@inject NavigationManager NavigationManager
+
+<h3>Marcas</h3>
+@Mensaje
+<table class="table">
+    <tbody>
+        <tr>
+            <td colspan="2"><a href="/marcadetails">Agregar</a></td>
+        </tr>
+    </tbody>
+</table>
+
+@if (marcas == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+
+    <RadzenGrid AllowFiltering="true" FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive"
+                FilterMode="FilterMode.Advanced" AllowPaging="true" PageSize="10"
+                AllowSorting="true" Data="@marcas" TItem="Marca" class="w-100">
+        <Columns>
+            <RadzenGridColumn TItem="Marca" Property="idPais" Title="Pais" Width="20%" />
+            <RadzenGridColumn TItem="Marca" Property="Nombre" Title="Nombre" Width="30%" />
+            <RadzenGridColumn TItem="Marca" Property="Puerto" Title="Puerto" Width="30%" />
+            <RadzenGridColumn TItem="Marca" Title="Editar" Width="10%">
+                <Template Context="data">
+                    <RadzenLink Path="@($"/marcadetails/{data.idMarca}")" Text="Editar"></RadzenLink>
+                </Template>
+            </RadzenGridColumn>
+            <RadzenGridColumn TItem="Marca" Title="Eliminar" Width="10%">
+                <Template Context="data">
+                    <RadzenLink Path="@($"/marcadelete/{data.idMarca}")" Text="Eliminar"></RadzenLink>
+                </Template>
+            </RadzenGridColumn>
+
+        </Columns>
+    </RadzenGrid>
+}
+
+@code {
+    IEnumerable<Marca> marcas;
+
+    public string? Mensaje { get; set; }
+
+   
+    protected async override Task OnInitializedAsync()
+    {
+        try
+        {
+            marcas = await MarcaService.GetAllMarca();
+        }
+        catch (Exception e)
+        {
+            Mensaje = "Error:" + e.Message;
+        }
+    }
+
+}

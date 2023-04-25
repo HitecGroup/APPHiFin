@@ -1,0 +1,323 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Server\\APPHiFin.Server.csproj": {}
+  },
+  "projects": {
+    "C:\\DEV-HITEC\\APPHiFin\\APPHiFin.Repositories\\APPHiFin.Repositories.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin.Repositories\\APPHiFin.Repositories.csproj",
+        "projectName": "APPHiFin.Repositories",
+        "projectPath": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin.Repositories\\APPHiFin.Repositories.csproj",
+        "packagesPath": "C:\\Users\\jbrito\\.nuget\\packages\\",
+        "outputPath": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin.Repositories\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jbrito\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Shared\\APPHiFin.Shared.csproj": {
+                "projectPath": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Shared\\APPHiFin.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\APPHiFin.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\APPHiFin.Client.csproj",
+        "projectName": "APPHiFin.Client",
+        "projectPath": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\APPHiFin.Client.csproj",
+        "packagesPath": "C:\\Users\\jbrito\\.nuget\\packages\\",
+        "outputPath": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jbrito\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Shared\\APPHiFin.Shared.csproj": {
+                "projectPath": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Shared\\APPHiFin.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.Authentication.WebAssembly.Msal": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.Graph": {
+              "target": "Package",
+              "version": "[4.51.0, )"
+            },
+            "Radzen.Blazor": {
+              "target": "Package",
+              "version": "[4.6.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
+              "version": "[7.0.1, 7.0.1]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Server\\APPHiFin.Server.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Server\\APPHiFin.Server.csproj",
+        "projectName": "APPHiFin.Server",
+        "projectPath": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Server\\APPHiFin.Server.csproj",
+        "packagesPath": "C:\\Users\\jbrito\\.nuget\\packages\\",
+        "outputPath": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Server\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jbrito\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\DEV-HITEC\\APPHiFin\\APPHiFin.Repositories\\APPHiFin.Repositories.csproj": {
+                "projectPath": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin.Repositories\\APPHiFin.Repositories.csproj"
+              },
+              "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\APPHiFin.Client.csproj": {
+                "projectPath": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\APPHiFin.Client.csproj"
+              },
+              "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Shared\\APPHiFin.Shared.csproj": {
+                "projectPath": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Shared\\APPHiFin.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.Server": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Shared\\APPHiFin.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Shared\\APPHiFin.Shared.csproj",
+        "projectName": "APPHiFin.Shared",
+        "projectPath": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Shared\\APPHiFin.Shared.csproj",
+        "packagesPath": "C:\\Users\\jbrito\\.nuget\\packages\\",
+        "outputPath": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jbrito\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

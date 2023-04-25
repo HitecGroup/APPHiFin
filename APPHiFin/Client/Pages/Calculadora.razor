@@ -1,0 +1,297 @@
+﻿@page "/calculadora"
+
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@using Microsoft.VisualBasic
+@using APPHiFin.Shared
+@using Services
+@attribute [Authorize]
+@inject HttpClient Http
+
+@inject IMarcaService MarcaService
+@inject IModeloService ModeloService
+@inject IFinanciamientoService FinanciamientoService
+@inject NotificationService NotificationService
+
+<PageTitle>Calculadora</PageTitle>
+
+@if (lstModelos == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+	<div class="container-fluid">
+		<RadzenCard style="background-color:#F2F2F2;" class="mb-3 pb-2">
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-4 align-items-center d-flex">
+                        <RadzenLabel Text="Marca" />
+                    </div>
+                    <div class="col-md-8">
+							<RadzenDropDown TValue="int" @bind-Value="idMar" Placeholder="Selecciona marca" Data=@(lstMarcas) TextProperty="Nombre" ValueProperty="idMarca" class="w-100" Change="@OnChange" />
+                        </div>                         
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-4 align-items-center d-flex">
+                        <RadzenLabel Text="Modelo" />
+                    </div>
+                    <div class="col-md-8">
+                        <RadzenDropDown TValue="int" @bind-Value="idMod" Data=@(lstModelos.Where(m => m.IdMarca == idMar)) Placeholder="Selecciona modelo" TextProperty="ModeloSAP" ValueProperty="IdModelo" class="w-100" FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive" AllowFiltering="true" />
+                    </div>
+                </div>
+            </div>
+        </div>
+			<div class="row mb-2">
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-md-4 align-items-center d-flex">
+							<RadzenLabel Text="Precio sin IVA" />
+						</div>
+						<div class="col-md-8">
+							<RadzenNumeric TValue="double" @bind-Value="vPrecio" class="w-100"></RadzenNumeric>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="row mb-2">
+						<div class="col-md-4 align-items-center d-flex">
+							<RadzenLabel Text="Meses" />
+						</div>
+						<div class="col-md-8">
+							@*<RadzenNumeric TValue="int" @bind-Value="vMeses" class="w-100"></RadzenNumeric>*@
+								<RadzenDropDown TValue="int" @bind-Value="vMeses" Placeholder="Selecciona el periodo" Data=@(meses) class="w-100" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row mb-2">
+				<div class="col-md-6">
+					<div class="row mb-2">
+						<div class="col-md-4 align-items-center d-flex">
+							<RadzenLabel Text="Renta Anticipada" />
+						</div>
+						<div class="col-md-8">
+							<RadzenNumeric TValue="double" @bind-Value="vRentaAnt" class="w-100"></RadzenNumeric>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="row mb-2">
+						<div class="col-md-12 align-items-center d-flex">
+							<RadzenButton ButtonStyle="ButtonStyle.Secondary" Text="Calcular" Click=@Calcular />      
+						</div>
+					</div>
+				</div>
+			</div>
+        </RadzenCard>
+		<div class="container" style="font-size:calc(0.6em + 0.6vw);">
+			<table class="table">
+				<thead>
+					<tr>
+						<th style="width:5%;">&nbsp;</th>
+						<th style="width:65%;">Concepto</th>
+						<th style="width:30%;">Costo</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>&nbsp;</td>
+						<td>Precio de Maquinaria</td>
+						<td style="background-color:#F0F5FB; text-align:right;">@strPrecioMaquinaria</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>Gastos Iniciales</td>
+						<td style="background-color:#F0F5FB; text-align:right;">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>Renta Anticipada:</td>
+						<td style="background-color:#F0F5FB; text-align:right;">@strRentaAnticipada</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>Comisión por apertura (2.5%):</td>
+						<td style="background-color:#F0F5FB; text-align:right;">@strComisionApertura</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>Ratificación</td>
+						<td style="background-color:#F0F5FB; text-align:right;">@strRatificacion</td>
+					</tr>
+					<tr style="font-weight:800; border:solid 2px #c3c3c3;">
+						<td>A</td>
+						<td>Total Gastos Iniciales</td>
+						<td style="background-color:#F0F5FB; text-align:right;">@strTotalGastosIniciales</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>Rentas Ordinarias</td>
+						<td style="background-color:#F0F5FB; text-align:right;">&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>Número de Rentas</td>
+						<td style="background-color:#F0F5FB; text-align:right;">@strNumRentas</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>Monto de Renta</td>
+						<td style="background-color:#F0F5FB; text-align:right;">@strMontoRenta</td>
+					</tr>
+					<tr style="font-weight:800; border:solid 2px #c3c3c3;">
+						<td>B</td>
+						<td>Total Rentas Ordinarias</td>
+						<td style="background-color:#F0F5FB; text-align:right;">@strTotalRentasOrd</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>Opción de Compra</td>
+						<td style="background-color:#F0F5FB; text-align:right;">&nbsp;</td>
+					</tr>
+					<tr style="font-weight:800; border:solid 2px #c3c3c3;">
+						<td>C</td>
+						<td>Valor de Opción de Compra</td>
+						<td style="background-color:#F0F5FB; text-align:right;">@strValorOpcCompra</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td style="background-color:#F0F5FB; text-align:right;">&nbsp;</td>
+					</tr>
+					<tr style="font-weight:800; border:solid 2px #c3c3c3;">
+						<td>D</td>
+						<td>Flujo total de financiamiento</td>
+						<td style="background-color:#F0F5FB; text-align:right;">@strFlujoTotalFin</td>
+					</tr>
+					<tr style="font-weight:800;">
+						<td>&nbsp;</td>
+						<td>Precio de maquinaria</td>
+						<td style="background-color:#F0F5FB; text-align:right;">@strPrecioMaquinaria</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>Costo/ Beneficio del financiamiento</td>
+						<td style="background-color:#F0F5FB; text-align:right;">@strCostoBenFin</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>Número de años</td>
+						<td style="background-color:#F0F5FB; text-align:right;">@strNumAnios</td>
+					</tr>
+					<tr style="font-weight:800; border:solid 2px #c3c3c3;">
+						<td>&nbsp;</td>
+						<td>Costo/ Beneficio por año</td>
+						<td style="background-color:#F0F5FB; text-align:right;">@strCostoBenAnnio</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr style="font-weight:bold;">
+						<th></th>
+						<th>Tasa Anual Global</th>
+						<th style="text-align:right;">@strTasaAnual</th>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+    </div>
+}
+
+@code {
+
+	public IEnumerable<Marca> lstMarcas { get; set; }
+	public IEnumerable<Modelo> lstModelos { get; set; }
+
+	IEnumerable<int> meses = new int[] {24,36};
+
+	public string? Mensaje { get; set; }
+	public int idMar = 1;
+	public int idMod;
+	double vINTERES = 0;
+	public double vPrecio = 85000.00;
+	public double vRentaAnt = 20;
+	public int vMeses = 24;
+	public int vResidual = 1;
+	public double vTasaReinversion = 0.0;
+	public double vInteresPrestamo = 0.10;    
+	public double @vRentaMensualSinInteres = 0;
+	public double @vRentaMensualConInteres = 0;
+
+	// Variables de presentación
+	public string strPrecioMaquinaria = "0.0";
+	public string strRentaAnticipada = "0.0";
+	public string strComisionApertura = "0.0";
+	public string strRatificacion = "0.0";
+	public string strTotalGastosIniciales = "0.0";
+	public string strNumRentas = "0";
+	public string strMontoRenta = "0.0";
+	public string strTotalRentasOrd = "0.0";
+	public string strValorOpcCompra = "0.0";
+	public string strFlujoTotalFin = "0.0";
+	public string strCostoBenFin = "0.0";
+	public string strNumAnios = "0.0";
+	public string strCostoBenAnnio = "0.0";
+	public string strTasaAnual = "0.0";
+
+	public Financiamiento hifin;
+
+	protected async override Task OnInitializedAsync()
+	{
+		try
+		{
+			lstMarcas = await MarcaService.GetAllMarca();
+			lstModelos = await ModeloService.GetAllModelos();         
+		}
+		catch (Exception e)
+		{
+			Mensaje = "Error:" + e.Message;
+		}
+	}
+
+	void ShowNotification(NotificationMessage message)
+	{
+		NotificationService.Notify(message);		
+	}
+
+	void OnChange(object value)
+	{
+		idMod = 0;
+	}
+
+	protected async Task Calcular()
+	{
+		if (idMod == 0)
+		{
+			ShowNotification(new NotificationMessage
+				{
+					Style = "position: fixed; top: 90%; left: 50%; transform: translate(-50%, -50%);",
+					Severity = NotificationSeverity.Error, 
+					Summary = "",
+					Detail = "Selecciona un Modelo",
+					Duration = 3000
+				});
+		} else
+		{
+			hifin = await FinanciamientoService.GetFinanciamiento(idMod, vPrecio, vMeses, (vRentaAnt / 100), vResidual, vTasaReinversion, vInteresPrestamo);
+			strPrecioMaquinaria = hifin.PrecioMaquinaria;
+			strRentaAnticipada = hifin.RentaAnticipada;
+			strComisionApertura = hifin.ComisionApertura;
+			strRatificacion = hifin.Ratificacion;
+			strTotalGastosIniciales = hifin.TotalGastosIniciales;
+			strNumRentas = hifin.NumRentas;
+			strMontoRenta = hifin.MontoRenta;
+			strTotalRentasOrd = hifin.TotalRentasOrd;
+			strValorOpcCompra = hifin.ValorOpcCompra;
+			strFlujoTotalFin = hifin.FlujoTotalFin;
+			strCostoBenFin = hifin.CostoBenFin;
+			strNumAnios = hifin.NumAnios;
+			strCostoBenAnnio = hifin.CostoBenAnnio;
+			strTasaAnual = hifin.TasaAnual;
+		}
+	}
+
+}

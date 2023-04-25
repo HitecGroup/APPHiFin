@@ -1,0 +1,12 @@
+C:\DEV-HITEC\APPHiFin\APPHiFin\Shared\bin\Release\net7.0\APPHiFin.Shared.deps.json
+C:\DEV-HITEC\APPHiFin\APPHiFin\Shared\bin\Release\net7.0\APPHiFin.Shared.dll
+C:\DEV-HITEC\APPHiFin\APPHiFin\Shared\bin\Release\net7.0\APPHiFin.Shared.pdb
+C:\DEV-HITEC\APPHiFin\APPHiFin\Shared\obj\Release\net7.0\APPHiFin.Shared.csproj.AssemblyReference.cache
+C:\DEV-HITEC\APPHiFin\APPHiFin\Shared\obj\Release\net7.0\APPHiFin.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\DEV-HITEC\APPHiFin\APPHiFin\Shared\obj\Release\net7.0\APPHiFin.Shared.AssemblyInfoInputs.cache
+C:\DEV-HITEC\APPHiFin\APPHiFin\Shared\obj\Release\net7.0\APPHiFin.Shared.AssemblyInfo.cs
+C:\DEV-HITEC\APPHiFin\APPHiFin\Shared\obj\Release\net7.0\APPHiFin.Shared.csproj.CoreCompileInputs.cache
+C:\DEV-HITEC\APPHiFin\APPHiFin\Shared\obj\Release\net7.0\APPHiFin.Shared.dll
+C:\DEV-HITEC\APPHiFin\APPHiFin\Shared\obj\Release\net7.0\refint\APPHiFin.Shared.dll
+C:\DEV-HITEC\APPHiFin\APPHiFin\Shared\obj\Release\net7.0\APPHiFin.Shared.pdb
+C:\DEV-HITEC\APPHiFin\APPHiFin\Shared\obj\Release\net7.0\ref\APPHiFin.Shared.dll

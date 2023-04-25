@@ -1,0 +1,103 @@
+﻿@page "/ayuda"
+<div class="p-1 rounded">
+    <h3>Ayuda de la App</h3>
+    <p class="fw-normal fw-bold">En esta sección puedes obtener asistencia y recomendaciones para la solución de los problemas más comunes en la App.</p>    
+    <section class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h5>Preguntas frecuentes y solución de problemas</h5>
+                    <div class="accordion accordion-flush" id="accordion-list">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-content-1">
+                                    1. ¿Como registrarse en la App?
+                                </button>
+                            </h2>
+                            <div id="accordion-content-1" class="accordion-collapse collapse" data-bs-parent="#accordion-list">
+                                <div class="accordion-body">
+                                    Envía un correo a <a href="mailto:HDgrupohitec@grupohitec.com?Subject=AppHIFin - Alta">Help Desk Grupo Hitec</a>, con el asunto AppHiFin - Alta.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-content-2">
+                                    2. La app envía mensajes de error durante la carga
+                                </button>
+                            </h2>
+                            <div id="accordion-content-2" class="accordion-collapse collapse" data-bs-parent="#accordion-list">
+                                <div class="accordion-body">
+                                    <p style ="text-align:justify;">
+                                        Asegúrate de que tu operador sea compatible con los mensajes SMS, MMS o RCS. Revisa tu plan o saldo para ver si tienes suficiente crédito para enviar o recibir mensajes. Verifica si tienes señal. Revisa si el modo de avión No está activado.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-content-3">
+                                    3. Instalación de la aplicación en Windows 10/11
+                                </button>
+                            </h2>
+                            <div id="accordion-content-3" class="accordion-collapse collapse" data-bs-parent="#accordion-list">
+                                <div class="accordion-body">
+                                    <div class="col-12">
+                                        <p style="text-align:justify;">Al visitar la aplicación vía Web, los usuarios tienen la opción de instalar la aplicación en el menú de inicio o la pantalla principal de su sistema operativo, o bien mediante el acoplamiento. La forma en la que se presenta esta opción depende del explorador del usuario. Al usar exploradores basados en Chromium de escritorio, como Edge o Chrome, aparece un botón Agregar en la barra de direcciones URL. Después de que el usuario seleccione el botón Agregar, recibirá un cuadro de diálogo de confirmación.</p>
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <img src="./images/windows_install.png" class="img-fluid img-thumbnail" alt="Windows Install" style="width:380px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-content-4">
+                                    4. Instalación de la aplicación en dispositivos iOS
+                                </button>
+                            </h2>
+                            <div id="accordion-content-4" class="accordion-collapse collapse" data-bs-parent="#accordion-list">
+                                <div class="accordion-body">
+                                    <div class="col-12">
+                                        <p style="text-align:justify;">En iOS, los visitantes pueden instalar la aplicación mediante el botón Compartir de Safari y su opción Agregar a la pantalla Home.</p>
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <img src="./images/iOS_install.png" class="img-fluid img-thumbnail" alt="Windows Install" style="width:380px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-content-5">
+                                    5. Instalación de la aplicación en dispositivos Android
+                                </button>
+                            </h2>
+                            <div id="accordion-content-5" class="accordion-collapse collapse" data-bs-parent="#accordion-list">
+                                <div class="accordion-body">
+                                    <div class="col-12">
+                                        <p style="text-align:justify;">En Chrome para Android, los usuarios deben seleccionar el botón Menú en la esquina superior derecha y, después, Agregar a la pantalla Home o la opción Instalar aplicación.</p>
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <img src="./images/android_install.png" class="img-fluid img-thumbnail" alt="Windows Install" style="width:380px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br />
+    @*<a class="btn btn-sm btn-primary" href="#" role="button">Ver preguntas frecuentes</a>*@
+</div>
+
+
+@code {
+
+}

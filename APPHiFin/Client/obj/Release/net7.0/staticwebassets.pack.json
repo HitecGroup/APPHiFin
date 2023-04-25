@@ -1,0 +1,265 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\bin\\Release\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\obj\\Release\\net7.0\\build-gz\\ehvgNE66.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\obj\\Release\\net7.0\\scopedcss\\bundle\\APPHiFin.Client.styles.css",
+      "PackagePath": "staticwebassets\\APPHiFin.Client.styles.css"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\obj\\Release\\net7.0\\service-worker-assets.js",
+      "PackagePath": "staticwebassets\\service-worker-assets.js"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\obj\\Release\\net7.0\\service-worker\\service-worker.published.js",
+      "PackagePath": "staticwebassets\\service-worker.js"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\appsettings.json",
+      "PackagePath": "staticwebassets\\appsettings.json"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\fonts\\MaterialIcons-Regular.woff",
+      "PackagePath": "staticwebassets\\fonts\\MaterialIcons-Regular.woff"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\fonts\\google\\5aUp9-KzpRiLCAt4Unrc-xIKmCU5oLlVnmZjtiu7.woff2",
+      "PackagePath": "staticwebassets\\fonts\\google\\5aUp9-KzpRiLCAt4Unrc-xIKmCU5oLlVnmZjtiu7.woff2"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\fonts\\google\\5aUp9-KzpRiLCAt4Unrc-xIKmCU5oLlVnmdjtiu7.woff2",
+      "PackagePath": "staticwebassets\\fonts\\google\\5aUp9-KzpRiLCAt4Unrc-xIKmCU5oLlVnmdjtiu7.woff2"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\fonts\\google\\5aUp9-KzpRiLCAt4Unrc-xIKmCU5oLlVnmhjtg.woff2",
+      "PackagePath": "staticwebassets\\fonts\\google\\5aUp9-KzpRiLCAt4Unrc-xIKmCU5oLlVnmhjtg.woff2"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\fonts\\google\\5aUp9-KzpRiLCAt4Unrc-xIKmCU5oLlVnmtjtiu7.woff2",
+      "PackagePath": "staticwebassets\\fonts\\google\\5aUp9-KzpRiLCAt4Unrc-xIKmCU5oLlVnmtjtiu7.woff2"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\fonts\\google\\5aUp9-KzpRiLCAt4Unrc-xIKmCU5oLlVnmxjtiu7.woff2",
+      "PackagePath": "staticwebassets\\fonts\\google\\5aUp9-KzpRiLCAt4Unrc-xIKmCU5oLlVnmxjtiu7.woff2"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\fonts\\google\\5aUp9-KzpRiLCAt4Unrc-xIKmCU5oPFTnmZjtiu7.woff2",
+      "PackagePath": "staticwebassets\\fonts\\google\\5aUp9-KzpRiLCAt4Unrc-xIKmCU5oPFTnmZjtiu7.woff2"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\fonts\\google\\5aUp9-KzpRiLCAt4Unrc-xIKmCU5oPFTnmdjtiu7.woff2",
+      "PackagePath": "staticwebassets\\fonts\\google\\5aUp9-KzpRiLCAt4Unrc-xIKmCU5oPFTnmdjtiu7.woff2"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\fonts\\google\\5aUp9-KzpRiLCAt4Unrc-xIKmCU5oPFTnmhjtg.woff2",
+      "PackagePath": "staticwebassets\\fonts\\google\\5aUp9-KzpRiLCAt4Unrc-xIKmCU5oPFTnmhjtg.woff2"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\fonts\\google\\5aUp9-KzpRiLCAt4Unrc-xIKmCU5oPFTnmtjtiu7.woff2",
+      "PackagePath": "staticwebassets\\fonts\\google\\5aUp9-KzpRiLCAt4Unrc-xIKmCU5oPFTnmtjtiu7.woff2"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\fonts\\google\\5aUp9-KzpRiLCAt4Unrc-xIKmCU5oPFTnmxjtiu7.woff2",
+      "PackagePath": "staticwebassets\\fonts\\google\\5aUp9-KzpRiLCAt4Unrc-xIKmCU5oPFTnmxjtiu7.woff2"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\fonts\\google\\5aUu9-KzpRiLCAt4Unrc-xIKmCU5qE52i1dC.woff2",
+      "PackagePath": "staticwebassets\\fonts\\google\\5aUu9-KzpRiLCAt4Unrc-xIKmCU5qE52i1dC.woff2"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\fonts\\google\\5aUu9-KzpRiLCAt4Unrc-xIKmCU5qER2i1dC.woff2",
+      "PackagePath": "staticwebassets\\fonts\\google\\5aUu9-KzpRiLCAt4Unrc-xIKmCU5qER2i1dC.woff2"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\fonts\\google\\5aUu9-KzpRiLCAt4Unrc-xIKmCU5qEV2i1dC.woff2",
+      "PackagePath": "staticwebassets\\fonts\\google\\5aUu9-KzpRiLCAt4Unrc-xIKmCU5qEV2i1dC.woff2"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\fonts\\google\\5aUu9-KzpRiLCAt4Unrc-xIKmCU5qEl2i1dC.woff2",
+      "PackagePath": "staticwebassets\\fonts\\google\\5aUu9-KzpRiLCAt4Unrc-xIKmCU5qEl2i1dC.woff2"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\fonts\\google\\5aUu9-KzpRiLCAt4Unrc-xIKmCU5qEp2iw.woff2",
+      "PackagePath": "staticwebassets\\fonts\\google\\5aUu9-KzpRiLCAt4Unrc-xIKmCU5qEp2iw.woff2"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\icon-512.png",
+      "PackagePath": "staticwebassets\\icon-512.png"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\images\\android_install.png",
+      "PackagePath": "staticwebassets\\images\\android_install.png"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\images\\favicon.ico",
+      "PackagePath": "staticwebassets\\images\\favicon.ico"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\images\\hifin_logo.png",
+      "PackagePath": "staticwebassets\\images\\hifin_logo.png"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\images\\hifin_logo_solution.png",
+      "PackagePath": "staticwebassets\\images\\hifin_logo_solution.png"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\images\\iOS_install.png",
+      "PackagePath": "staticwebassets\\images\\iOS_install.png"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\images\\lock_logo.png",
+      "PackagePath": "staticwebassets\\images\\lock_logo.png"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\images\\logo_full.png",
+      "PackagePath": "staticwebassets\\images\\logo_full.png"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\images\\profile.png",
+      "PackagePath": "staticwebassets\\images\\profile.png"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\images\\windows_install.png",
+      "PackagePath": "staticwebassets\\images\\windows_install.png"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\js\\bootstrap\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\js\\bootstrap\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\js\\bootstrap\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\js\\bootstrap\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\js\\bootstrap\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\js\\bootstrap\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\js\\bootstrap\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\js\\bootstrap\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\js\\bootstrap\\bootstrap.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\js\\bootstrap\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\js\\bootstrap\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\js\\bootstrap\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\DEV-HITEC\\APPHiFin\\APPHiFin\\Client\\wwwroot\\manifest.json",
+      "PackagePath": "staticwebassets\\manifest.json"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.APPHiFin.Client.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.build.APPHiFin.Client.props",
+      "PackagePath": "build\\APPHiFin.Client.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.APPHiFin.Client.props",
+      "PackagePath": "buildMultiTargeting\\APPHiFin.Client.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildTransitive.APPHiFin.Client.props",
+      "PackagePath": "buildTransitive\\APPHiFin.Client.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

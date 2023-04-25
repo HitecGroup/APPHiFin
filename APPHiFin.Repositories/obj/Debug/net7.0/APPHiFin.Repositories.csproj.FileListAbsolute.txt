@@ -1,0 +1,15 @@
+C:\DEV-HITEC\APPHiFin\APPHiFin.Repositories\bin\Debug\net7.0\APPHiFin.Repositories.deps.json
+C:\DEV-HITEC\APPHiFin\APPHiFin.Repositories\bin\Debug\net7.0\APPHiFin.Repositories.dll
+C:\DEV-HITEC\APPHiFin\APPHiFin.Repositories\bin\Debug\net7.0\APPHiFin.Repositories.pdb
+C:\DEV-HITEC\APPHiFin\APPHiFin.Repositories\bin\Debug\net7.0\APPHiFin.Shared.dll
+C:\DEV-HITEC\APPHiFin\APPHiFin.Repositories\bin\Debug\net7.0\APPHiFin.Shared.pdb
+C:\DEV-HITEC\APPHiFin\APPHiFin.Repositories\obj\Debug\net7.0\APPHiFin.Repositories.csproj.AssemblyReference.cache
+C:\DEV-HITEC\APPHiFin\APPHiFin.Repositories\obj\Debug\net7.0\APPHiFin.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\DEV-HITEC\APPHiFin\APPHiFin.Repositories\obj\Debug\net7.0\APPHiFin.Repositories.AssemblyInfoInputs.cache
+C:\DEV-HITEC\APPHiFin\APPHiFin.Repositories\obj\Debug\net7.0\APPHiFin.Repositories.AssemblyInfo.cs
+C:\DEV-HITEC\APPHiFin\APPHiFin.Repositories\obj\Debug\net7.0\APPHiFin.Repositories.csproj.CoreCompileInputs.cache
+C:\DEV-HITEC\APPHiFin\APPHiFin.Repositories\obj\Debug\net7.0\APPHiFin.Repositories.csproj.CopyComplete
+C:\DEV-HITEC\APPHiFin\APPHiFin.Repositories\obj\Debug\net7.0\APPHiFin.Repositories.dll
+C:\DEV-HITEC\APPHiFin\APPHiFin.Repositories\obj\Debug\net7.0\refint\APPHiFin.Repositories.dll
+C:\DEV-HITEC\APPHiFin\APPHiFin.Repositories\obj\Debug\net7.0\APPHiFin.Repositories.pdb
+C:\DEV-HITEC\APPHiFin\APPHiFin.Repositories\obj\Debug\net7.0\ref\APPHiFin.Repositories.dll
